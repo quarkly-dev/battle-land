@@ -176,13 +176,14 @@ export default (() => {
 		<Section quarkly-title="Image" background="--dark" padding="0 0 0 0">
 			<Override
 				slot="SectionContent"
-				width="100%"
+				width="100vw"
 				position="relative"
 				overflow-x="hidden"
 				overflow-y="hidden"
 				align-items="center"
+				max-width="100vw"
 			/>
-			<Image width="1560px" src="https://uploads.quarkly.io/5fb64c8108b41a001fec523b/images/hero-background.webp?v=2020-11-19T13:30:03.627Z" srcSet="https://uploads.quarkly.io/5fb64c8108b41a001fec523b/images/hero-background-2x.webp?v=2020-11-19T13:30:27.550Z 2x,https://uploads.quarkly.io/5fb64c8108b41a001fec523b/images/hero-background.webp?v=2020-11-19T13:30:03.627Z 1x" sm-width="767px" />
+			<Image src="https://uploads.quarkly.io/5fb64c8108b41a001fec523b/images/screens.png?v=2020-12-15T16:51:34.980Z" sm-width="767px" lg-width="1560px" width="100vw" />
 			<Box
 				quarkly-title="Overlay"
 				position="absolute"
@@ -639,6 +640,7 @@ export default (() => {
 			md-padding="60px 0 80px 0"
 			sm-padding="30px 0 0 0"
 		>
+			<Override slot="SectionContent" max-width="100%" width="100%" />
 			<Box
 				quarkly-title="Content"
 				display="flex"
